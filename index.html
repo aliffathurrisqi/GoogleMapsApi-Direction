@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Maps Routes</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCc2S27MyVOC2u-fBWfagA5UyKpOPRkX0&callback=initMap&libraries=places"></script>
+    
+    <div id="map-canvas" style="width:100%;height:500px;margin-bottom: 20px;"></div>
+
+    <script src="main.js"></script>
+    
+    <label>Posisi Anda :</label>
+    <input type="text" id="start">
+
+    <label>Tujuan :</label>
+    <input type="text" id="end">
+    <button onclick="route()">Temukan Rute</button>
+
+    <script>alert("Jangan Lupa gunakan API KEY yang valid");</script>
+</body>
+</html>
